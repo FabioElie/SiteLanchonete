@@ -4,29 +4,392 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lanchonete 544</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="JS/menu.js" defer></script>
+    <script src="JS/cardapio.js" defer></script>
+    <link rel="shortcut icon" href="IMG/11.png" type="image/x-icon">
+</head>
 <body>
     <header>
         <nav class="navbar">
-            <i class="fa-solid fa-pizza-slice" id="nav-logo">FOOD</i>
-            <ul class="nav-list">
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">Cardápio</a></li>
-                <li class="nav-item"><a href="#">Avaliações</a></li>
-            </ul>
-            <button class="btn-default">
-                Peça Aqui
-            </button>
-
-
+        <i class="fa-solid fa-pizza-slice" id="nav-logo">FOOD</i>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#cardapio">Cardápio</a></li>
+            <li class="nav-item"><a href="#avaliacao">Avaliações</a></li>
+        </ul>
+        <button class="btn-default">
+            Peça Aqui
+        </button>
 
         </nav>
+        <button class="mobile-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li class="nav-item"><a href="#home">Home</a></li>
+                <li class="nav-item"><a href="#cardapio">Cardápio</a></li>
+                <li class="nav-item"><a href="#avaliacao">Avaliações</a></li>
+            </ul>
+        </div>
     </header>
+    <main class="content">
+        <section class="home" id="home">
+            <img src="" alt="">
+            <div class="shape">
 
+            </div>
+            <div class="cta">
+                <h1 class="title">
+                    O sabor que vai até <span>você.</span>
+                </h1>
+                <p class="descricao">
+                    Venha experimentar uma viagem gastrônomica única, onde cada prato é preparado com ingredientes frescos e de alta qualidade.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#cardapio" class="btn-default">Ver Cardápio</a>
+                    <a href="" id="phone_button">
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </button>
+                        (67)9 9656-2538
+                    </a>
+                </div>
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="IMG/5.png" alt="">
+            </div>
+        </section>
+    </main>
+    <section class="cardapio" id="cardapio">
+        <h2 class="section-title">
+            CARDÁPIO
+        </h2>
+        <h3 class="section-subtitle">
+            Nossos pratos especiais.
+        </h3>
+        <div class="area-cards">
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="IMG/2.png" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    PIZZA MARGHERITA
+                </h3>
 
+                <span class="descricao">
+                    Clássica e irresistível, com molho de tomate fresco, mussarela derretida e manjericão colhido na hora.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(5000+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$45,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping">
+
+                        </i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="IMG/4.png" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    Macarrão 544
+                </h3>
+                <span class="descricao">
+                    Generosa e saborosa, com rodelas de calabresa defumada, cebola caramelizada e azeitonas selecionadas.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(4800+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$52,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping">
+
+                        </i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="IMG/5.png" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    MACARRAO QUATRO QUEIJOS
+                </h3>
+                <span class="descricao">
+                    Massa al dente envolvida em um molho cremoso de quatro queijos: mussarela, parmesão, gorgonzola e provolone.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(4200+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$58,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping">
+
+                        </i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="IMG/6.png" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    MACARRAO SIMPLES
+                </h3>
+                <span class="descricao">
+                    Macarrão simples com molho de tomate e queijo ralado.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(3900+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$38,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping">
+
+                        </i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="IMG/7.png" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    MACARRAO ALHO E OLEO
+                </h3>
+                <span class="descricao">
+                    Macarrão ao alho e óleo, finalizado com salsinha e queijo parmesão.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(3500+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$22,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping">
+
+                        </i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="IMG/8.png" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    MACARRAO COM CAMARAO
+                </h3>
+                <span class="descricao">
+                    Macarrão com camarão, alho, azeite e salsinha.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(3100+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$28,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping">
+
+                        </i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="IMG/comida-italiana.jpg" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    MACARRAO AO SUGO DE CARNE
+                </h3>
+                <span class="descricao">
+                    Macarrão ao sugo de carne, com molho bolonhesa encorpado, bechamel cremoso e muito parmesão gratinado.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(2800+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$48,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping">
+
+                        </i>
+                    </button>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-heart">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <img src="IMG/pngtree-panzanella-italian-food-png-image_13068037.png" alt="" class="card-imagem">
+                <h3 class="card-title">
+                    SALADA PANZANELLA
+                </h3>
+                <span class="descricao">
+                    Salada italiana refrescante com pão rústico, tomates maduros, pepino, cebola roxa e azeite extravirgem.
+                </span>
+                <div class="card-rate">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span>(2200+)</span>
+                </div>
+                <div class="card-price">
+                    <h4>R$32,00</h4>
+                    <button class="btn-default">
+                        <i class="fa-solid fa-basket-shopping">
+
+                        </i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="avaliacao" id="avaliacao">
+        <img src="IMG/10.png" alt="" class="imagem-chef">
+        <div class="depoimentos-content">
+            <h2 class="section-title">
+                AVALIAÇÕES
+            </h2>
+            <h3 class="section-subtitle">
+                O que os clientes falam sobre nós.
+            </h3>
+            <div class="area-feedbacks">
+                <div class="feedback">
+                    <img src="IMG/Eu.jpg" alt="Foto do cliente" class="imagem-avatar">
+                    <div class="feedback-content">
+                        <p>Fabio Elie
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                            A melhor lanchonete da cidade! A comida é deliciosa, o atendimento é excelente e o ambiente é super aconchegante. Recomendo a todos!
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <img src="IMG/cliente.png" alt="Foto do cliente 2" class="imagem-avatar">
+                    <div class="feedback-content">
+                        <p>Alexandre
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                           Restaurante e atendimento excelentes! A comida é deliciosa e o ambiente é super aconchegante! Poderia ser um pouco mais rápido, mas vale a pena esperar.
+                        </p>
+                    </div>
+                </div>
+                <div class="feedback">
+                    <img src="IMG/ProfThiago.jpg" alt="Foto do cliente 3" class="imagem-avatar">
+                    <div class="feedback-content">
+                        <p>Thiago
+                            <span>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </span>
+                        </p>
+                        <p>
+                           Faltou um pouco de Python no tempero, o backend poderia ser um pouco mais robusto, nao sei se o frontend é responsivo, mas a comida é boa!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn-default btn-ver">Ver mais avaliações...</button>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-itens">
+            <span class="copyright">
+                &copy; 2026 Lanchonete 544. Todos os direitos reservados.
+            </span>
+            <div class="social-media-buttons">
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
