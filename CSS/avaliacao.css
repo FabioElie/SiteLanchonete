@@ -62,10 +62,11 @@
     .avaliacao{
         flex-direction: column;
         padding: 20px;
+        /* overflow: hidden; */
     }
 
     .imagem-chef{
-        width: 400px;
+        width: 300px
     }
 
     .feedback{

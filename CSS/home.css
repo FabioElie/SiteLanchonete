@@ -14,7 +14,7 @@
     border-radius: 80% 80% 60% 60%;
 }
 .cta{
-    width: 25%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     gap: 28px;
@@ -73,6 +73,13 @@
         width: 100%;
         text-align: center;
         align-items: center;
+    }
+
+    .cta-buttons{
+        flex-direction: column;
+    }
+    .cta-buttons a{
+        justify-content: center;
     }
     .home{
         min-height: 100%;
